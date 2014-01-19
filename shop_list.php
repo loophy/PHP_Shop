@@ -14,7 +14,7 @@ else
 	print $_SESSION['member_name'];
 	print '様　';
 	print '<a href="member_logout.php">ログアウト</a><br />';
-	print '<br />'
+	print '<br />';
 }
 
 ?>
@@ -55,9 +55,13 @@ else
 			print '<a href="shop_product.php?procode='.$rec['code'].'">';
 			print $rec['name'].'---';
 			print $rec['price'].'円';
-			print '</a>'
+			print '</a>';
 			print '<br />';
 		}
+
+		print '<br >/';
+		print '<a href="shop_cartlook.php">カートを見る</a><br />';
+		
 	}
 
 	catch (Exception $e)
